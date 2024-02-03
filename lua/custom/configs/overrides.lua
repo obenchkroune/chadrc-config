@@ -12,6 +12,7 @@ M.treesitter = {
     "c",
     "markdown",
     "markdown_inline",
+	"vue",
   },
   indent = {
     enable = true,
@@ -30,6 +31,7 @@ M.mason = {
     -- web dev stuff
     "css-lsp",
     "html-lsp",
+	"vue-lsp",
     "typescript-language-server",
     "deno",
     "prettier",
@@ -50,7 +52,7 @@ M.nvimtree = {
     highlight_git = true,
     icons = {
       show = {
-        git = true,
+        git = false,
       },
     },
   },

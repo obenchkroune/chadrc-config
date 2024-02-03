@@ -26,11 +26,11 @@ opt.fillchars = { eob = " " }
 opt.ignorecase = true
 opt.smartcase = true
 opt.mouse = "a"
-vim.o.scrolloff = 10
+vim.o.scrolloff = 999
 
 -- Numbers
 opt.number = true
-opt.numberwidth = 2
+opt.numberwidth = 4
 opt.ruler = false
 
 -- disable nvim intro
@@ -58,7 +58,7 @@ for _, provider in ipairs { "node", "perl", "python3", "ruby" } do
 end
 
 -- add binaries installed by mason.nvim to path
-local is_windows = vim.loop.os_uname().sysname == "Windows_NT"
+local is_windows = false
 vim.env.PATH = vim.fn.stdpath "data" .. "/mason/bin" .. (is_windows and ";" or ":") .. vim.env.PATH
 
 -------------------------------------- autocmds ------------------------------------------

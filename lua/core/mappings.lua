@@ -99,7 +99,7 @@ M.tabufline = {
         require("nvchad.tabufline").close_buffer()
       end,
       "Close buffer",
-    },
+    }
   },
 }
 
