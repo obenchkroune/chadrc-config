@@ -5,5 +5,5 @@
 --   pattern = "*",
 --   command = "tabdo wincmd =",
 -- })
-vim.cmd("source /home/oussama/.config/nvim/stdheader.vim")
 -- vim.cmd("setlocal spell spelllang=en_us")
+
