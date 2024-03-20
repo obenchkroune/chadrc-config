@@ -4,6 +4,12 @@ local overrides = require("custom.configs.overrides")
 local plugins = {
 
 	-- Override plugin definition options
+	{
+		"lukas-reineke/indent-blankline.nvim", main = "ibl",
+		config = function ()
+			require('ibl').setup()
+		end
+	},
 
 	{
 		"neovim/nvim-lspconfig",
